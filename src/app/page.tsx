@@ -1,69 +1,191 @@
-import Image from "next/image";
+import Link from "next/link";
+import { FleetPreview } from "@/components/Fleet";
+import type { Metadata } from "next";
 
-export default function Home() {
+export const metadata: Metadata = {
+  title: "DarkRentals — Location de voitures à Montréal | Québec",
+  description:
+    "Location de voitures abordables à Montréal et partout au Québec. Compactes, berlines, VUS, minibus et camions. Réservez en ligne dès maintenant.",
+  alternates: {
+    canonical: "https://darkrentals.com",
+  },
+};
+
+export default function HomePage() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    name: "DarkRentals",
+    description:
+      "Location de voitures abordables à Montréal et partout au Québec.",
+    url: "https://darkrentals.com",
+    telephone: "+1-514-555-0199",
+    email: "info@darkrentals.com",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "1234 Rue Sainte-Catherine",
+      addressLocality: "Montréal",
+      addressRegion: "QC",
+      postalCode: "H3B 1B3",
+      addressCountry: "CA",
+    },
+    openingHoursSpecification: [
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        opens: "08:00",
+        closes: "20:00",
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: "Saturday",
+        opens: "09:00",
+        closes: "18:00",
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: "Sunday",
+        opens: "10:00",
+        closes: "16:00",
+      },
+    ],
+    areaServed: {
+      "@type": "State",
+      name: "Québec",
+    },
+    priceRange: "$$",
+  };
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
+
+      {/* Hero */}
+      <section className="relative flex min-h-[85vh] items-center overflow-hidden grid-bg">
+        {/* Gradient orbs */}
+        <div className="absolute left-1/4 top-1/4 h-96 w-96 rounded-full bg-neon-purple/10 blur-[120px]" />
+        <div className="absolute bottom-1/4 right-1/4 h-96 w-96 rounded-full bg-neon-cyan/10 blur-[120px]" />
+        <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-neon-purple via-electric-blue to-neon-cyan" />
+
+        <div className="scanlines absolute inset-0" />
+
+        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="max-w-3xl">
+            <div className="mb-4 inline-block rounded-full border border-neon-purple/30 bg-neon-purple/10 px-4 py-1 text-xs font-medium text-neon-purple">
+              🚗 Montréal • Québec
+            </div>
+            <h1 className="text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl lg:text-7xl">
+              Louez. <span className="gradient-text">Conduisez.</span>
+              <br />
+              Dominez la route.
+            </h1>
+            <p className="mt-6 max-w-xl text-lg text-foreground/60 sm:text-xl">
+              Des voitures abordables pour Montréal et tout le Québec.
+              Compactes, berlines, VUS — votre prochaine voiture vous attend
+              dans l&apos;ombre.
+            </p>
+            <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+              <Link
+                href="/reservation"
+                className="neon-btn rounded-lg px-8 py-4 text-center text-base font-bold text-white"
+              >
+                Réserver maintenant
+              </Link>
+              <Link
+                href="/flotte"
+                className="inline-flex items-center justify-center rounded-lg border border-foreground/20 px-8 py-4 text-base font-medium text-foreground transition-colors hover:border-neon-cyan/50 hover:text-neon-cyan"
+              >
+                Voir la flotte →
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Fleet Preview */}
+      <FleetPreview />
+
+      {/* Features */}
+      <section className="border-t border-card-border py-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h2 className="text-3xl font-bold sm:text-4xl">
+              Pourquoi <span className="gradient-text">DarkRentals</span> ?
+            </h2>
+          </div>
+          <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            {[
+              {
+                icon: "💰",
+                title: "Prix imbattables",
+                desc: "Des tarifs compétitifs sans frais cachés. Ce que vous voyez est ce que vous payez.",
+              },
+              {
+                icon: "🗺️",
+                title: "Couverture Québec",
+                desc: "Disponible à Montréal, Québec, Laval, Gatineau et partout au Québec.",
+              },
+              {
+                icon: "⚡",
+                title: "Réservation rapide",
+                desc: "Réservez en ligne en quelques minutes. Confirmation instantanée.",
+              },
+              {
+                icon: "🛡️",
+                title: "Assurance incluse",
+                desc: "Assurance responsabilité incluse dans tous nos forfaits de location.",
+              },
+              {
+                icon: "🔄",
+                title: "Flexibilité totale",
+                desc: "Location journalière, hebdomadaire ou mensuelle. Annulation gratuite 24h.",
+              },
+              {
+                icon: "🚗",
+                title: "Flotte variée",
+                desc: "Compactes, berlines, VUS, minibus et camions — on a ce qu'il vous faut.",
+              },
+            ].map((feature) => (
+              <div
+                key={feature.title}
+                className="neon-card rounded-xl bg-card-bg p-6"
+              >
+                <span className="text-3xl">{feature.icon}</span>
+                <h3 className="mt-4 text-lg font-bold text-foreground">
+                  {feature.title}
+                </h3>
+                <p className="mt-2 text-sm text-foreground/60">{feature.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="border-t border-card-border py-20">
+        <div className="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold sm:text-4xl">
+            Prêt à <span className="gradient-text">prendre la route</span> ?
+          </h2>
+          <p className="mt-4 text-foreground/60">
+            Réservez votre voiture en quelques clics et profitez de nos tarifs
+            exclusifs.
           </p>
+          <div className="mt-8">
+            <Link
+              href="/reservation"
+              className="neon-btn inline-block rounded-lg px-10 py-4 text-lg font-bold text-white"
+            >
+              Réserver maintenant
+            </Link>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+      </section>
+    </>
   );
 }
