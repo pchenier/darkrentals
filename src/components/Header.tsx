@@ -18,9 +18,12 @@ export function Header() {
     <header className="sticky top-0 z-50 border-b border-card-border bg-background/80 backdrop-blur-md">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center gap-2">
-          <span className="text-2xl font-bold tracking-tight gradient-text">
-            DarkRentals
-          </span>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/images/logo.png"
+            alt="DarkRentals"
+            className="h-9 w-auto object-contain sm:h-10"
+          />
         </Link>
 
         {/* Desktop nav */}
