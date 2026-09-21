@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Chakra_Petch, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 
-const geistSans = Geist({
+const geistSans = Chakra_Petch({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+  weight: ["300","400","500","600","700"],
 });
 
 const geistMono = Geist_Mono({

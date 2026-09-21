@@ -6,7 +6,7 @@ import type { Car } from "@/data/cars";
 export function CarCard({ car }: { car: Car }) {
   return (
     <div className="neon-card rounded-xl bg-card-bg overflow-hidden">
-      <div className="relative h-48 w-full">
+      <div className="relative h-64 w-full">
         <Image
           src={car.image}
           alt={car.name}
@@ -17,6 +17,9 @@ export function CarCard({ car }: { car: Car }) {
         <div className="absolute inset-0 bg-gradient-to-t from-card-bg/80 to-transparent" />
         <span className="absolute left-3 top-3 rounded-full bg-neon-purple/20 px-3 py-1 text-xs font-medium text-neon-purple backdrop-blur-sm border border-neon-purple/30">
           {car.categoryLabel}
+        </span>
+        <span className="absolute right-3 top-3 rounded-full bg-neon-cyan/15 px-3 py-1 text-xs font-medium text-neon-cyan backdrop-blur-sm border border-neon-cyan/30">
+          {car.consumption} L/100km
         </span>
       </div>
       <div className="p-5">

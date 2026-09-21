@@ -5,6 +5,7 @@ export interface Car {
   categoryLabel: string;
   seats: number;
   transmission: string;
+  consumption: number;
   pricePerDay: number;
   pricePerWeek: number;
   image: string;
@@ -19,6 +20,7 @@ export const cars: Car[] = [
     categoryLabel: "Compacte",
     seats: 4,
     transmission: "Automatique",
+    consumption: 6.2,
     pricePerDay: 29,
     pricePerWeek: 169,
     image: "/images/cars/fleet-econ/chevrolet-spark.jpg",
@@ -32,6 +34,7 @@ export const cars: Car[] = [
     categoryLabel: "Compacte",
     seats: 5,
     transmission: "Automatique",
+    consumption: 6.5,
     pricePerDay: 35,
     pricePerWeek: 199,
     image: "/images/cars/fleet-econ/hyundai-accent.jpg",
@@ -45,6 +48,7 @@ export const cars: Car[] = [
     categoryLabel: "Compacte",
     seats: 5,
     transmission: "Automatique",
+    consumption: 6.4,
     pricePerDay: 37,
     pricePerWeek: 209,
     image: "/images/cars/fleet-econ/kia-rio.jpg",
@@ -58,6 +62,7 @@ export const cars: Car[] = [
     categoryLabel: "Compacte",
     seats: 5,
     transmission: "Automatique",
+    consumption: 6.5,
     pricePerDay: 39,
     pricePerWeek: 229,
     image: "/images/cars/fleet-econ/nissan-versa.jpg",
@@ -71,6 +76,7 @@ export const cars: Car[] = [
     categoryLabel: "Compacte",
     seats: 5,
     transmission: "Automatique",
+    consumption: 6.9,
     pricePerDay: 45,
     pricePerWeek: 259,
     image: "/images/cars/fleet-econ/honda-civic.jpg",
