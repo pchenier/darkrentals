@@ -1,11 +1,11 @@
 @import "tailwindcss";
 
 :root {
-  --background: #131320;
+  --background: #101018;
   --foreground: #F4F4F8;
-  --neon-purple: #A855F7;
-  --neon-cyan: #06B6D4;
-  --electric-blue: #3B82F6;
+  --neon-purple: #D9B47E;
+  --neon-cyan: #EAE3D6;
+  --electric-blue: #9A7B4F;
   --card-bg: #1B1B2C;
   --card-border: #2C2C44;
   --input-bg: #222234;
@@ -45,71 +45,72 @@ body {
 /* Grid background pattern */
 .grid-bg {
   background-image:
-    linear-gradient(rgba(168, 85, 247, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(168, 85, 247, 0.03) 1px, transparent 1px);
+    linear-gradient(rgba(217, 180, 126, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(217, 180, 126, 0.03) 1px, transparent 1px);
   background-size: 50px 50px;
 }
 
 /* Neon glow effects */
 .neon-glow-purple {
-  box-shadow: 0 0 5px rgba(168, 85, 247, 0.3), 0 0 20px rgba(168, 85, 247, 0.1);
+  box-shadow: 0 0 5px rgba(217, 180, 126, 0.3), 0 0 20px rgba(217, 180, 126, 0.1);
 }
 
 .neon-glow-cyan {
-  box-shadow: 0 0 5px rgba(6, 182, 212, 0.3), 0 0 20px rgba(6, 182, 212, 0.1);
+  box-shadow: 0 0 5px rgba(234, 227, 214, 0.3), 0 0 20px rgba(234, 227, 214, 0.1);
 }
 
 .neon-glow-blue {
-  box-shadow: 0 0 5px rgba(59, 130, 246, 0.3), 0 0 20px rgba(59, 130, 246, 0.1);
+  box-shadow: 0 0 5px rgba(154, 123, 79, 0.3), 0 0 20px rgba(154, 123, 79, 0.1);
 }
 
 .neon-text-purple {
-  text-shadow: 0 0 10px rgba(168, 85, 247, 0.5), 0 0 40px rgba(168, 85, 247, 0.2);
+  text-shadow: 0 0 10px rgba(217, 180, 126, 0.5), 0 0 40px rgba(217, 180, 126, 0.2);
 }
 
 .neon-text-cyan {
-  text-shadow: 0 0 10px rgba(6, 182, 212, 0.5), 0 0 40px rgba(6, 182, 212, 0.2);
+  text-shadow: 0 0 10px rgba(234, 227, 214, 0.5), 0 0 40px rgba(234, 227, 214, 0.2);
 }
 
 /* Card hover effect */
 .neon-card {
-  border: 1px solid rgba(168, 85, 247, 0.15);
+  border: 1px solid rgba(217, 180, 126, 0.15);
   transition: all 0.3s ease;
 }
 
 .neon-card:hover {
-  border-color: rgba(168, 85, 247, 0.5);
-  box-shadow: 0 0 15px rgba(168, 85, 247, 0.15), 0 0 30px rgba(168, 85, 247, 0.05);
+  border-color: rgba(217, 180, 126, 0.5);
+  box-shadow: 0 0 15px rgba(217, 180, 126, 0.15), 0 0 30px rgba(217, 180, 126, 0.05);
   transform: translateY(-2px);
 }
 
 /* Neon button */
 .neon-btn {
-  background: linear-gradient(135deg, #A855F7, #3B82F6);
-  box-shadow: 0 0 15px rgba(168, 85, 247, 0.4), 0 0 30px rgba(59, 130, 246, 0.2);
+  background: linear-gradient(135deg, #E6C78E, #A8834F);
+  color: #14100A;
+  box-shadow: 0 4px 20px rgba(217, 180, 126, 0.25), 0 1px 3px rgba(0, 0, 0, 0.4);
   transition: all 0.3s ease;
 }
 
 .neon-btn:hover {
-  box-shadow: 0 0 20px rgba(168, 85, 247, 0.6), 0 0 40px rgba(59, 130, 246, 0.3);
+  box-shadow: 0 6px 24px rgba(217, 180, 126, 0.35), 0 2px 4px rgba(0, 0, 0, 0.4);
   transform: translateY(-1px);
 }
 
 /* Input focus style */
 .neon-input {
-  border: 1px solid rgba(168, 85, 247, 0.2);
+  border: 1px solid rgba(217, 180, 126, 0.2);
   transition: all 0.3s ease;
 }
 
 .neon-input:focus {
-  border-color: #A855F7;
-  box-shadow: 0 0 10px rgba(168, 85, 247, 0.3);
+  border-color: #D9B47E;
+  box-shadow: 0 0 10px rgba(217, 180, 126, 0.3);
   outline: none;
 }
 
 /* Gradient text */
 .gradient-text {
-  background: linear-gradient(135deg, #A855F7, #06B6D4);
+  background: linear-gradient(135deg, #D9B47E, #EAE3D6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -125,10 +126,10 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(168, 85, 247, 0.3);
+  background: rgba(217, 180, 126, 0.3);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(168, 85, 247, 0.5);
+  background: rgba(217, 180, 126, 0.5);
 }

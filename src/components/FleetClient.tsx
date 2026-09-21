@@ -37,7 +37,7 @@ export function FleetClient() {
                 onClick={() => setActiveCategory(cat.key)}
                 className={`rounded-lg px-4 py-2 text-sm font-medium transition-all ${
                   activeCategory === cat.key
-                    ? "bg-neon-purple/20 text-neon-purple border border-neon-purple/50 neon-glow-purple"
+                    ? "bg-neon-purple/25 text-neon-purple border border-neon-purple/80 neon-glow-purple font-semibold"
                     : "border border-card-border text-foreground/85 hover:border-neon-purple/30 hover:text-foreground"
                 }`}
               >

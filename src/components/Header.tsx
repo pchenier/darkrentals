@@ -22,7 +22,7 @@ export function Header() {
           <img
             src="/images/logo-h.png"
             alt="DarkRentals"
-            className="h-11 w-auto object-contain drop-shadow-[0_0_12px_rgba(168,85,247,0.45)] sm:h-12"
+            className="h-11 w-auto object-contain drop-shadow-[0_0_10px_rgba(217,180,126,0.3)] sm:h-12"
           />
         </Link>
 
