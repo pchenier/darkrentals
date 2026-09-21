@@ -178,6 +178,34 @@ export default function ContactPage() {
                 q: "L'assurance est-elle incluse ?",
                 a: "L'assurance responsabilité de base est incluse. Des couverture supplémentaires (collision, vol) sont disponibles en option.",
               },
+              {
+                q: "Puis-je conduire hors du Québec ?",
+                a: "Oui, vous pouvez conduire partout au Canada et aux États-Unis. Signalez-le simplement à la réservation pour que votre contrat soit ajusté gratuitement.",
+              },
+              {
+                q: "Quelles sont les politiques d'annulation ?",
+                a: "Annulation gratuite jusqu'à 24 heures avant la prise du véhicule. Après ce délai, une journée de location vous sera facturée.",
+              },
+              {
+                q: "Que dois-je vérifier au retour du véhicule ?",
+                a: "Le char doit être retourné avec le même niveau d'essence qu'au départ et en bon état. Un agent fait l'inspection avec vous en 5 minutes et vous recevez votre dépôt le jour même.",
+              },
+              {
+                q: "Y a-t-il des frais cachés ?",
+                a: "Non. Le prix affiché est le prix final : assurance de base, kilométrage illimité et taxes inclus. Seules les options que vous choisissez (GPS, siège d'enfant, deuxième conducteur) s'ajoutent au total.",
+              },
+              {
+                q: "Offrez-vous des tarifs longue durée ?",
+                a: "Oui. À partir de 7 jours, le tarif hebdomadaire s'applique automatiquement et vous économisez environ 20 % par rapport au tarif journalier. Pour un mois et plus, contactez-nous pour un prix sur mesure.",
+              },
+              {
+                q: "Le véhicule est-il équipé pour l'hiver ?",
+                a: "Toute la flotte est équipée de pneus d'hiver dès le 1er décembre, conformément à la loi québécoise. Balai à neige et grattoir sont aussi fournis sans frais pendant la saison.",
+              },
+              {
+                q: "Puis-je ajouter un deuxième conducteur ?",
+                a: "Oui, pour 5 $ par jour. Le conducteur additionnel doit présenter son permis valide au comptoir lors de la prise du véhicule.",
+              },
             ].map((faq) => (
               <div
                 key={faq.q}
