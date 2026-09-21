@@ -22,7 +22,7 @@ export function FleetClient() {
           </h1>
           <p className="mt-4 max-w-2xl text-foreground/60">
             Explorez notre gamme complète de véhicules. Des compactes
-            économiques aux VUS spacieux, trouvez la voiture parfaite pour votre
+            Des compactes économiques, fiables et pas chères — trouvez la voiture parfaite pour votre
             prochain voyage.
           </p>
         </div>

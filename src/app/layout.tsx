@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     template: "%s | DarkRentals",
   },
   description:
-    "Location de voitures abordables à Montréal et partout au Québec. Compactes, berlines, VUS, minibus et camions. Réservez en ligne dès maintenant.",
+    "Location de voitures abordables à Montréal et partout au Québec. Des compactes économiques, fiables et prêtes à partir. Réservez en ligne dès maintenant.",
   metadataBase: new URL("https://darkrentals.com"),
   openGraph: {
     title: "DarkRentals — Location de voitures à Montréal",

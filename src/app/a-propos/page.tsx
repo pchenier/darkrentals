@@ -48,8 +48,8 @@ export default function AboutPage() {
                   honnêtes.
                 </p>
                 <p>
-                  De la compacte économique pour vos déplacements urbains au VUS
-                  familial pour vos vacances en Charlevoix, nous avons le
+                  Des compactes économiques pour vos déplacements urbains aux petites
+                  berlines pour vos virées en Charlevoix, nous avons le
                   véhicule qu&apos;il vous faut.
                 </p>
               </div>

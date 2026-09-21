@@ -1,11 +1,12 @@
 import Link from "next/link";
+import Image from "next/image";
 import { FleetPreview } from "@/components/Fleet";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "DarkRentals — Location de voitures à Montréal | Québec",
   description:
-    "Location de voitures abordables à Montréal et partout au Québec. Compactes, berlines, VUS, minibus et camions. Réservez en ligne dès maintenant.",
+    "Location de voitures abordables à Montréal et partout au Québec. Des compactes économiques, fiables et prêtes à partir. Réservez en ligne dès maintenant.",
   alternates: {
     canonical: "https://darkrentals.com",
   },
@@ -75,33 +76,50 @@ export default function HomePage() {
         <div className="scanlines absolute inset-0" />
 
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl">
-            <div className="mb-4 inline-block rounded-full border border-neon-purple/30 bg-neon-purple/10 px-4 py-1 text-xs font-medium text-neon-purple">
-              🚗 Montréal • Québec
+          <div className="grid items-center gap-12 lg:grid-cols-2">
+            <div className="max-w-3xl">
+              <div className="mb-4 inline-block rounded-full border border-neon-purple/30 bg-neon-purple/10 px-4 py-1 text-xs font-medium text-neon-purple">
+                🚗 Montréal • Québec
+              </div>
+              <h1 className="text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl lg:text-7xl">
+                Louez. <span className="gradient-text">Conduisez.</span>
+                <br />
+                Dominez la route.
+              </h1>
+              <p className="mt-6 max-w-xl text-lg text-foreground/60 sm:text-xl">
+                Des voitures abordables pour Montréal et tout le Québec.
+                Des compactes économiques et fiables — votre prochaine voiture
+                vous attend dans l&apos;ombre.
+              </p>
+              <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+                <Link
+                  href="/reservation"
+                  className="neon-btn rounded-lg px-8 py-4 text-center text-base font-bold text-white"
+                >
+                  Réserver maintenant
+                </Link>
+                <Link
+                  href="/flotte"
+                  className="inline-flex items-center justify-center rounded-lg border border-foreground/20 px-8 py-4 text-base font-medium text-foreground transition-colors hover:border-neon-cyan/50 hover:text-neon-cyan"
+                >
+                  Voir la flotte →
+                </Link>
+              </div>
             </div>
-            <h1 className="text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl lg:text-7xl">
-              Louez. <span className="gradient-text">Conduisez.</span>
-              <br />
-              Dominez la route.
-            </h1>
-            <p className="mt-6 max-w-xl text-lg text-foreground/60 sm:text-xl">
-              Des voitures abordables pour Montréal et tout le Québec.
-              Compactes, berlines, VUS — votre prochaine voiture vous attend
-              dans l&apos;ombre.
-            </p>
-            <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-              <Link
-                href="/reservation"
-                className="neon-btn rounded-lg px-8 py-4 text-center text-base font-bold text-white"
-              >
-                Réserver maintenant
-              </Link>
-              <Link
-                href="/flotte"
-                className="inline-flex items-center justify-center rounded-lg border border-foreground/20 px-8 py-4 text-base font-medium text-foreground transition-colors hover:border-neon-cyan/50 hover:text-neon-cyan"
-              >
-                Voir la flotte →
-              </Link>
+            <div className="relative hidden lg:block">
+              <div className="relative overflow-hidden rounded-2xl border border-card-border">
+                <Image
+                  src="/images/hero-car.jpg"
+                  alt="Honda Civic économique de location à Montréal"
+                  width={600}
+                  height={750}
+                  priority
+                  className="h-[520px] w-full object-cover opacity-90"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-background/20" />
+                <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-neon-purple via-electric-blue to-neon-cyan" />
+              </div>
+              <div className="absolute -bottom-5 left-1/2 h-8 w-3/4 -translate-x-1/2 rounded-full bg-neon-purple/25 blur-3xl" />
             </div>
           </div>
         </div>
@@ -148,7 +166,7 @@ export default function HomePage() {
               {
                 icon: "🚗",
                 title: "Flotte variée",
-                desc: "Compactes, berlines, VUS, minibus et camions — on a ce qu'il vous faut.",
+                desc: "Cinq compactes économiques et fiables — le bon char au bon prix.",
               },
             ].map((feature) => (
               <div

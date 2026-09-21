@@ -20,9 +20,9 @@ export function Header() {
         <Link href="/" className="flex items-center gap-2">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/images/logo.png"
+            src="/images/logo-h.png"
             alt="DarkRentals"
-            className="h-9 w-auto object-contain sm:h-10"
+            className="h-11 w-auto object-contain drop-shadow-[0_0_12px_rgba(168,85,247,0.45)] sm:h-12"
           />
         </Link>
 
