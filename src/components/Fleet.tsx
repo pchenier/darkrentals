@@ -24,8 +24,8 @@ export function CarCard({ car }: { car: Car }) {
       </div>
       <div className="p-5">
         <h3 className="text-lg font-bold text-foreground">{car.name}</h3>
-        <p className="mt-1 text-sm text-foreground/60">{car.description}</p>
-        <div className="mt-4 flex items-center gap-4 text-xs text-foreground/50">
+        <p className="mt-1 text-sm text-foreground/85">{car.description}</p>
+        <div className="mt-4 flex items-center gap-4 text-xs text-foreground/75">
           <span className="flex items-center gap-1">
             <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -43,7 +43,7 @@ export function CarCard({ car }: { car: Car }) {
         <div className="mt-4 flex items-end justify-between">
           <div>
             <span className="text-2xl font-bold text-neon-purple">{car.pricePerDay}$</span>
-            <span className="text-sm text-foreground/50">/jour</span>
+            <span className="text-sm text-foreground/75">/jour</span>
           </div>
           <Link
             href={`/reservation?car=${car.id}`}
@@ -66,7 +66,7 @@ export function FleetPreview() {
           <h2 className="text-3xl font-bold sm:text-4xl">
             Notre <span className="gradient-text">Flotte</span>
           </h2>
-          <p className="mt-4 text-foreground/60">
+          <p className="mt-4 text-foreground/85">
             Des véhicules pour tous les besoins et tous les budgets.
           </p>
         </div>

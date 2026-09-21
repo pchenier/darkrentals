@@ -32,7 +32,7 @@ export function Header() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-foreground/70 transition-colors hover:text-neon-purple"
+              className="text-sm font-medium text-foreground/90 transition-colors hover:text-neon-purple"
             >
               {link.label}
             </Link>
@@ -70,7 +70,7 @@ export function Header() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setMobileOpen(false)}
-                className="text-sm font-medium text-foreground/70 transition-colors hover:text-neon-purple"
+                className="text-sm font-medium text-foreground/90 transition-colors hover:text-neon-purple"
               >
                 {link.label}
               </Link>

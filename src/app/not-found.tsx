@@ -5,7 +5,7 @@ export default function NotFound() {
     <div className="flex min-h-[60vh] items-center justify-center">
       <div className="text-center">
         <h1 className="text-6xl font-extrabold gradient-text">404</h1>
-        <p className="mt-4 text-lg text-foreground/60">
+        <p className="mt-4 text-lg text-foreground/85">
           Page introuvable. Ce véhicule a peut-être quitté le stationnement.
         </p>
         <Link

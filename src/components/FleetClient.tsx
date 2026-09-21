@@ -20,10 +20,9 @@ export function FleetClient() {
           <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl">
             Notre <span className="gradient-text">Flotte</span>
           </h1>
-          <p className="mt-4 max-w-2xl text-foreground/60">
-            Explorez notre gamme complète de véhicules. Des compactes
-            Des compactes économiques, fiables et pas chères — trouvez la voiture parfaite pour votre
-            prochain voyage.
+          <p className="mt-4 max-w-2xl text-foreground/85">
+            Des compactes économiques, fiables et pas chères — trouvez la
+            voiture parfaite pour votre prochain voyage.
           </p>
         </div>
       </section>
@@ -39,7 +38,7 @@ export function FleetClient() {
                 className={`rounded-lg px-4 py-2 text-sm font-medium transition-all ${
                   activeCategory === cat.key
                     ? "bg-neon-purple/20 text-neon-purple border border-neon-purple/50 neon-glow-purple"
-                    : "border border-card-border text-foreground/60 hover:border-neon-purple/30 hover:text-foreground"
+                    : "border border-card-border text-foreground/85 hover:border-neon-purple/30 hover:text-foreground"
                 }`}
               >
                 {cat.label}
@@ -58,7 +57,7 @@ export function FleetClient() {
             ))}
           </div>
           {filteredCars.length === 0 && (
-            <p className="py-20 text-center text-foreground/40">
+            <p className="py-20 text-center text-foreground/65">
               Aucun véhicule trouvé dans cette catégorie.
             </p>
           )}

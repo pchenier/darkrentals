@@ -1,14 +1,14 @@
 @import "tailwindcss";
 
 :root {
-  --background: #0A0A0A;
-  --foreground: #ededed;
+  --background: #131320;
+  --foreground: #F4F4F8;
   --neon-purple: #A855F7;
   --neon-cyan: #06B6D4;
   --electric-blue: #3B82F6;
-  --card-bg: #111111;
-  --card-border: #1a1a2e;
-  --input-bg: #0f0f1a;
+  --card-bg: #1B1B2C;
+  --card-border: #2C2C44;
+  --input-bg: #222234;
 }
 
 @theme inline {
@@ -36,8 +36,8 @@ body {
     0deg,
     transparent,
     transparent 2px,
-    rgba(0, 0, 0, 0.03) 2px,
-    rgba(0, 0, 0, 0.03) 4px
+    rgba(0, 0, 0, 0.02) 2px,
+    rgba(0, 0, 0, 0.02) 4px
   );
   pointer-events: none;
 }

@@ -86,7 +86,7 @@ export default function HomePage() {
                 <br />
                 Dominez la route.
               </h1>
-              <p className="mt-6 max-w-xl text-lg text-foreground/60 sm:text-xl">
+              <p className="mt-6 max-w-xl text-lg text-foreground/85 sm:text-xl">
                 Des voitures abordables pour Montréal et tout le Québec.
                 Des compactes économiques et fiables — votre prochaine voiture
                 vous attend dans l&apos;ombre.
@@ -177,7 +177,7 @@ export default function HomePage() {
                 <h3 className="mt-4 text-lg font-bold text-foreground">
                   {feature.title}
                 </h3>
-                <p className="mt-2 text-sm text-foreground/60">{feature.desc}</p>
+                <p className="mt-2 text-sm text-foreground/85">{feature.desc}</p>
               </div>
             ))}
           </div>
@@ -190,7 +190,7 @@ export default function HomePage() {
           <h2 className="text-3xl font-bold sm:text-4xl">
             Prêt à <span className="gradient-text">prendre la route</span> ?
           </h2>
-          <p className="mt-4 text-foreground/60">
+          <p className="mt-4 text-foreground/85">
             Réservez votre voiture en quelques clics et profitez de nos tarifs
             exclusifs.
           </p>

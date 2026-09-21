@@ -36,7 +36,7 @@ export function BookingClient() {
           <h2 className="mt-4 text-2xl font-bold gradient-text">
             Réservation envoyée !
           </h2>
-          <p className="mt-3 text-foreground/60">
+          <p className="mt-3 text-foreground/85">
             Merci, {formData.name} ! Nous vous contacterons sous peu pour
             confirmer votre réservation.
           </p>
@@ -59,7 +59,7 @@ export function BookingClient() {
           <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl">
             <span className="gradient-text">Réservation</span>
           </h1>
-          <p className="mt-4 max-w-2xl text-foreground/60">
+          <p className="mt-4 max-w-2xl text-foreground/85">
             Remplissez le formulaire ci-dessous pour réserver votre véhicule.
             Confirmation rapide garantie.
           </p>
@@ -79,7 +79,7 @@ export function BookingClient() {
                 <div>
                   <label
                     htmlFor="name"
-                    className="mb-1 block text-sm font-medium text-foreground/70"
+                    className="mb-1 block text-sm font-medium text-foreground/90"
                   >
                     Nom complet *
                   </label>
@@ -97,7 +97,7 @@ export function BookingClient() {
                 <div>
                   <label
                     htmlFor="phone"
-                    className="mb-1 block text-sm font-medium text-foreground/70"
+                    className="mb-1 block text-sm font-medium text-foreground/90"
                   >
                     Téléphone *
                   </label>
@@ -115,7 +115,7 @@ export function BookingClient() {
                 <div className="sm:col-span-2">
                   <label
                     htmlFor="email"
-                    className="mb-1 block text-sm font-medium text-foreground/70"
+                    className="mb-1 block text-sm font-medium text-foreground/90"
                   >
                     Courriel
                   </label>
@@ -141,7 +141,7 @@ export function BookingClient() {
                 <div>
                   <label
                     htmlFor="carType"
-                    className="mb-1 block text-sm font-medium text-foreground/70"
+                    className="mb-1 block text-sm font-medium text-foreground/90"
                   >
                     Catégorie *
                   </label>
@@ -166,7 +166,7 @@ export function BookingClient() {
                 <div>
                   <label
                     htmlFor="carId"
-                    className="mb-1 block text-sm font-medium text-foreground/70"
+                    className="mb-1 block text-sm font-medium text-foreground/90"
                   >
                     Véhicule préféré
                   </label>
@@ -202,7 +202,7 @@ export function BookingClient() {
                 <div>
                   <label
                     htmlFor="pickupDate"
-                    className="mb-1 block text-sm font-medium text-foreground/70"
+                    className="mb-1 block text-sm font-medium text-foreground/90"
                   >
                     Date de début *
                   </label>
@@ -219,7 +219,7 @@ export function BookingClient() {
                 <div>
                   <label
                     htmlFor="returnDate"
-                    className="mb-1 block text-sm font-medium text-foreground/70"
+                    className="mb-1 block text-sm font-medium text-foreground/90"
                   >
                     Date de retour *
                   </label>
@@ -236,7 +236,7 @@ export function BookingClient() {
                 <div className="sm:col-span-2">
                   <label
                     htmlFor="pickupLocation"
-                    className="mb-1 block text-sm font-medium text-foreground/70"
+                    className="mb-1 block text-sm font-medium text-foreground/90"
                   >
                     Lieu de prise en charge *
                   </label>
@@ -269,7 +269,7 @@ export function BookingClient() {
             <div className="neon-card rounded-xl bg-card-bg p-6">
               <label
                 htmlFor="notes"
-                className="mb-1 block text-sm font-medium text-foreground/70"
+                className="mb-1 block text-sm font-medium text-foreground/90"
               >
                 Notes supplémentaires
               </label>

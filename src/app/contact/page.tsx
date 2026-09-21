@@ -18,7 +18,7 @@ export default function ContactPage() {
           <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl">
             <span className="gradient-text">Contact</span>
           </h1>
-          <p className="mt-4 max-w-2xl text-foreground/60">
+          <p className="mt-4 max-w-2xl text-foreground/85">
             Une question ? Besoin d&apos;aide ? Nous sommes là pour vous.
           </p>
         </div>
@@ -72,7 +72,7 @@ export default function ContactPage() {
                 </h2>
                 <ul className="mt-3 space-y-2">
                   {method.lines.map((line) => (
-                    <li key={line} className="text-sm text-foreground/60">
+                    <li key={line} className="text-sm text-foreground/85">
                       {line}
                     </li>
                   ))}
@@ -137,10 +137,10 @@ export default function ContactPage() {
                 <h3 className="text-lg font-bold text-foreground">
                   {loc.name}
                 </h3>
-                <p className="mt-2 text-sm text-foreground/60">{loc.address}</p>
-                <p className="text-sm text-foreground/60">{loc.city}</p>
+                <p className="mt-2 text-sm text-foreground/85">{loc.address}</p>
+                <p className="text-sm text-foreground/85">{loc.city}</p>
                 <div className="mt-3 border-t border-card-border pt-3">
-                  <p className="text-xs text-foreground/50">{loc.hours}</p>
+                  <p className="text-xs text-foreground/75">{loc.hours}</p>
                 </div>
               </div>
             ))}
@@ -184,7 +184,7 @@ export default function ContactPage() {
                 className="neon-card rounded-xl bg-card-bg p-6"
               >
                 <h3 className="font-bold text-foreground">{faq.q}</h3>
-                <p className="mt-2 text-sm text-foreground/60">{faq.a}</p>
+                <p className="mt-2 text-sm text-foreground/85">{faq.a}</p>
               </div>
             ))}
           </div>

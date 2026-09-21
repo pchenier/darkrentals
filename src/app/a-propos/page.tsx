@@ -18,7 +18,7 @@ export default function AboutPage() {
           <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl">
             À propos de <span className="gradient-text">DarkRentals</span>
           </h1>
-          <p className="mt-4 max-w-2xl text-lg text-foreground/60">
+          <p className="mt-4 max-w-2xl text-lg text-foreground/85">
             Votre partenaire de confiance pour la location de voitures au Québec
             depuis 2020.
           </p>
@@ -33,7 +33,7 @@ export default function AboutPage() {
               <h2 className="text-2xl font-bold">
                 Notre <span className="text-neon-purple">histoire</span>
               </h2>
-              <div className="mt-4 space-y-4 text-foreground/70">
+              <div className="mt-4 space-y-4 text-foreground/90">
                 <p>
                   DarkRentals est né d&apos;une idée simple : rendre la location
                   de voiture accessible, transparente et sans tracas pour tous
@@ -72,7 +72,7 @@ export default function AboutPage() {
                     <span className="text-2xl font-bold gradient-text">
                       {stat.value}
                     </span>
-                    <span className="text-sm text-foreground/60">
+                    <span className="text-sm text-foreground/85">
                       {stat.label}
                     </span>
                   </div>
@@ -90,7 +90,7 @@ export default function AboutPage() {
             <h2 className="text-3xl font-bold">
               Zone de <span className="gradient-text">couverture</span>
             </h2>
-            <p className="mt-4 text-foreground/60">
+            <p className="mt-4 text-foreground/85">
               Nous desservons Montréal et toutes les régions du Québec.
             </p>
           </div>
@@ -110,7 +110,7 @@ export default function AboutPage() {
                 className="neon-card rounded-xl bg-card-bg p-5"
               >
                 <h3 className="font-bold text-foreground">{loc.city}</h3>
-                <p className="mt-1 text-sm text-foreground/50">{loc.desc}</p>
+                <p className="mt-1 text-sm text-foreground/75">{loc.desc}</p>
               </div>
             ))}
           </div>
@@ -151,7 +151,7 @@ export default function AboutPage() {
                 <h3 className="mt-4 text-xl font-bold text-foreground">
                   {value.title}
                 </h3>
-                <p className="mt-3 text-sm text-foreground/60">{value.desc}</p>
+                <p className="mt-3 text-sm text-foreground/85">{value.desc}</p>
               </div>
             ))}
           </div>
