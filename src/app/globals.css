@@ -133,3 +133,34 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(217, 180, 126, 0.5);
 }
+/* Shine sweep on CTA button */
+.shine-btn {
+  position: relative;
+}
+
+.shine-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -80%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    105deg,
+    transparent,
+    rgba(230, 199, 142, 0.35),
+    transparent
+  );
+  transform: skewX(-20deg);
+  animation: shine 3.2s ease-in-out infinite;
+}
+
+@keyframes shine {
+  0% { left: -80%; }
+  55% { left: 130%; }
+  100% { left: 130%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .shine-btn::after { animation: none; }
+}

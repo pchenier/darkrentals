@@ -78,9 +78,9 @@ export function FleetPreview() {
         <div className="mt-12 text-center">
           <Link
             href="/flotte"
-            className="inline-block rounded-lg border border-neon-purple/30 px-8 py-3 text-sm font-semibold text-neon-purple transition-all hover:border-neon-purple hover:shadow-[0_0_15px_rgba(217,180,126,0.3)]"
+            className="shine-btn inline-block overflow-hidden rounded-lg border border-neon-purple/30 px-8 py-3 text-sm font-semibold text-neon-purple transition-all hover:border-neon-purple hover:shadow-[0_0_15px_rgba(217,180,126,0.3)]"
           >
-            Voir toute la flotte →
+            <span className="relative z-10">Voir toute la flotte →</span>
           </Link>
         </div>
       </div>
